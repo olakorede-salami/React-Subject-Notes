@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header'
+import Subjects from './Components/Subjects'
 
-function App() {
-  return (
+
+function App(){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <header>
+    <Header />
+  </header>
+  <div className="subject">
+    <Subjects name = "English Literature"/>
+    <Subjects name = "English Language"/>
+    <Subjects name = "Maths"/>
+    <Subjects name = "Chemistry"/>
+    <Subjects name = "Physics"/>
+    <Subjects name = "Biology"/>
+    <Subjects name = "RE"/>
+    <Subjects name = "History"/>
+    <Subjects name = "DT"/>
+  </div>
+  </div>
+  )
 }
+
 
 export default App;

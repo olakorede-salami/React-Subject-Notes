@@ -1,0 +1,28 @@
+{
+  "name": "subject-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js\" \"npm run frontend\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
